@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box"><img src="/image/img1.jpg" alt=""></div>
+        <div class="box"><img src="/image/img2.png" alt=""></div>
+        <div class="box"><img src="/image/img3.jpg" alt=""></div>
+        <div class="box"><img src="/image/img4.jpg" alt=""></div>
+        <div class="box"><img src="/image/img5.jpg" alt=""></div>
+    </div>
+    
+    <script src="https://unpkg.com/grade-js/docs/dist/grade.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('load', function(){
+            /*
+                A NodeList of all your image containers (Or a single Node).
+                The library will locate an <img /> within each
+                container to create the gradient from.
+             */
+            Grade(document.querySelectorAll('.box'))
+        })
+    </script>
+</body>
+</html>
